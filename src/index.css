@@ -1,0 +1,222 @@
+html {
+  height: 100%
+}
+
+@font-face {
+  font-family: DejaVuSansMono;
+  src: url('./fonts/DejaVuSansMono.ttf');
+}
+
+@font-face {
+  font-family: Ayana;
+  src: url('./fonts/Myfont-Regular.ttf');
+}
+
+@font-face {
+  font-family: Iosevka;
+  src: url('./fonts/iosevka-regular.ttf');
+}
+
+@font-face {
+  font-family: EversonMono;
+  src: url('./fonts/Everson Mono.ttf');
+}
+
+body {
+  font-family: DejaVuSansMono;
+  font-size: 20px;
+  line-height: 1.2em;
+  background-color: #ffffff;
+  margin: 0;
+  height: 100%;
+  user-select: none;
+}
+
+div#root {
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.ayana {
+  font-family: Ayana;
+  display: inline;
+  font-weight: bold;
+}
+
+.iosevka {
+  font-family: Iosevka;
+  display: inline;
+}
+
+.eversonmono {
+  font-family: EversonMono;
+  display: inline;
+}
+
+.menuContainer {
+  background-color: #cccccc;
+}
+
+.menu {
+  margin: auto;
+  width: 700px;
+}
+
+.menuItems {
+  text-align: right;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between
+}
+
+.menuItem {
+  display: inline;
+  margin-left: 50px;
+}
+
+.menuItemContent .button {
+  display: inline;
+}
+
+.menuItem.active{
+  text-decoration: underline;
+}
+
+.menuItem:hover {
+  font-weight: bold;
+  cursor: pointer;
+  color: darkblue;
+}
+
+.actionsContainer {
+  background-color: #eeeeee;
+  z-index: 10;
+}
+
+.actions {
+  padding-bottom: 20px;
+  min-height: 1.1em;
+  margin: auto;
+  width: 700px;
+}
+
+.action {
+  display: inline-block;
+  padding-right: 20px
+}
+
+.action:hover {
+  font-weight: bold;
+  cursor: pointer;
+  color: darkblue;
+}
+
+.action[disabled] {
+  color: #888888;
+}
+
+.action[disabled]:hover {
+  color: #888888;
+  font-weight: normal;
+  cursor: default;
+}
+
+.storyContainer {
+  background-color: #ffffff;
+  overflow-y: hidden;
+  z-index: 10;
+}
+
+.fadeOut {
+  transition: opacity 3.00s ease-in 2.00s;
+  opacity: 0;
+}
+
+.story {
+  margin: auto;
+  width: 700px;
+  overflow-y: hidden;
+}
+
+.storylines-enter {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.storylines-enter-active {
+  opacity: 1;
+  max-height: 200px;
+  transition: max-height 2s, opacity 1s 0.5s;
+}
+
+.storylines-exit {
+  /* not used */
+}
+
+.storylines-exit-active {
+  /* not used */
+}
+
+.closeUpContainer {
+  background-color: #dddddd;
+  text-align: center;
+}
+
+.closeUp {
+  margin: auto;
+  width: 700px;  
+  font-size: 20px;
+}
+
+div.button:hover {
+  cursor: pointer;
+  font-weight: bold;
+  color: darkblue;
+}
+
+
+.single {
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.double {
+  font-size: 40px;
+  line-height: 1.2em;
+}
+
+.triple {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+.quadruple {
+  font-size: 80px;
+  line-height: 1.2em;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 0px;
+  text-align: center;
+}
+
+td.left {
+  display: block;
+  text-align: left;
+}
+
+td.button {
+  cursor: pointer;
+}
+
+td.button:hover {
+  color: blue;
+}

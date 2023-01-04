@@ -1,0 +1,3 @@
+To Do's:
+- Make the design reactive so it works mobile too 
+- Publish on GitHub
