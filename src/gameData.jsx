@@ -22,7 +22,7 @@ const interactions = [{
     },
     texts: [
         'A strange voice awakens me.',
-        'I can feel I\'m laying down in what feels to be a confined space.', 
+        'I can feel I\'m laying down in what seems to be a confined space.', 
         'A dim light illuminates it.',
     ],
 }, {
@@ -99,7 +99,7 @@ const interactions = [{
     },
     texts: [
         'I push the top, and it slides away easily.',
-        'Stepping out I breath a bit of fresh air.',
+        'Stepping out I breathe a bit of fresh air.',
         'Somehow, it feels like that\'s been a long time ago.',
     ]
 }, {
@@ -923,7 +923,7 @@ const locations = [{
     id: 'vulcano_top',
     texts: [
         `I'm standing at the top of a vulcano.`,
-        `Apart from slits of smoke, four pipes come out the pit.`,
+        `Apart from slits of smoke, four pipes come out of the pit.`,
         `They go through a box and then disappear in the ground.`,
         `To my back, a small pathway leads down.`,
     ]
@@ -935,7 +935,7 @@ const locations = [{
         `There is a bridge connecting the vulcano to another island.`,
         `Four pipes come out of the ground.`,
         `The pipes are connected to a box.`,
-        `One pipe leads back from the box to the bridge.`,
+        `Another pipe leads back from the box to the bridge.`,
         `A note is attached to the box.`,
         `A path leads up the vulcano.`
     ]

@@ -104,9 +104,9 @@ export default function Menu({isSoundOn, setIsSoundOn, restart}) {
             +--------------------------------------------------------+
             | Made by Gertjan Kruiger. {nbsps(30)}|
             | Music by Jesse Kruiger. {nbsps(31)}|
-            | More about this game on my <a href="https:///www.ontdeksels.nl/">personal website</a>. {nbsps(10)}|
+            | More about this game on my <a href="https://www.ontdeksels.nl/blue5-an-adventure-in-monospace/">personal website</a>. {nbsps(10)}|
             | Android app available in the <a href="">Google Play Store</a>. {nbsps(7)}|
-            | Code available in <a href="">Github</a>. {nbsps(29)}|
+            | Code available in Github (<a href="https://github.com/gkruiger/blue5">web</a> | <a href="https://github.com/gkruiger/blue5app">app</a>). {nbsps(17)}|
             |{nbsps(56)}|
             | <div className='button' onClick={() => {setAboutHeight(0)}}>[Ok, good to know.]</div>{nbsps(36)}|
             +--------------------------------------------------------+
