@@ -1,55 +1,22 @@
-# Nano React App Default Javascript Template
+# Blue5 | A monospace adventure
+Learning myself React while creating a simple, but hopefully challenging and enjoyable game.
 
-The default template project for [nano-react-app](https://github.com/nano-react-app/nano-react-app).
+## How to play
+- Visit https://blue5.ontdeksels.nl to play it online
+- `npm start` — This will spawn a development server with a default port of `5173` so you can play it on your own machine.
+- `npm run build` — This will output a production build in the `dist` directory, so you can deploy and play it on the webserver of your choice.
 
-- `npm start` — This will spawn a development server with a default port of `5173`.
-- `npm run build` — This will output a production build in the `dist` directory.
+## Background information
+More about my how the development of this game on my personal website: https://www.ontdeksels.nl/blue5-an-adventure-in-monospace/.
 
-## Custom port
+## Thanks to
+- Michael T for the favicon (https://thenounproject.com/icon/darkness-element-1198067/)
 
-You can use the `-p` flag to specify a port for development. To do this, you can either run `npm start` with an additional flag:
+## Dependencies
+- classnames
+- fontkit
+- react
+- react-device-detect
+- react-dom
+- uuid
 
-```
-npm start -- --port 3000
-```
-
-Or edit the `start` script directly:
-
-```
-vite --port 3000
-```
-
-## Adding styles
-
-You can use CSS files with simple ES2015 `import` statements anywhere in your Javascript:
-
-```js
-import "./index.css";
-```
-
-## Babel transforms
-
-The Babel preset [babel-preset-nano-react-app](https://github.com/nano-react-app/babel-preset-nano-react-app) is used to support the same transforms that Create React App supports.
-
-The Babel configuration lives inside `package.json` and will override an external `.babelrc` file, so if you want to use `.babelrc` remember to delete the `babel` property inside `package.json`.
-
-
-## Deploy to GitHub Pages
-
-You can also deploy your project using GitHub pages.
-First install the `gh-pages` [package](https://github.com/tschaub/gh-pages):
-
-`npm i -D gh-pages`
-
-Use the following scripts for deployment:
-
-```js
-"scripts": {
-  "start": "vite",
-  "build": "vite build",
-  "predeploy": "rm -rf dist && vite build",
-  "deploy": "gh-pages -d dist"
-},
-```
-
-Then follow the normal procedure in GitHub Pages and select the `gh-pages` branch.
