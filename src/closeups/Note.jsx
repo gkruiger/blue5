@@ -5,18 +5,18 @@ export const Note = ({id}) => {
   let elements = [
     ['\u{1F702}', 'Fire', 'ahi'],
     ['\u{1F746}', 'Oil', 'aila'],
-    ['\u{1F706}', 'Aqua regia (royal water)', 'ali i wai'],
+    ['\u{1F706}', 'Aqua regia (royal water)', 'ali&nbsp;&nbsp;i&nbsp;&nbsp;wai'],
     ['\u{1F701}', 'Air', 'ea'],
-    ['\u{1F721}', 'Iron ore', 'hao hao'],
+    ['\u{1F721}', 'Iron ore', 'hao&nbsp;&nbsp;hao'],
     ['\u{1F703}', 'Earth', 'honua'],
-    ['\u{1F72A}', 'Lead ore', 'ke kepau oka'],
-    ['\u{1F720}', 'Copper ore', 'keleawe keleawe'],
+    ['\u{1F72A}', 'Lead ore', 'ke&nbsp;&nbsp;kepau&nbsp;&nbsp;oka'],
+    ['\u{1F720}', 'Copper ore', 'keleawe&nbsp;&nbsp;keleawe'],
     ['\u{1F732}', 'Regulus', 'liona'],
-    ['\u{1F708}', 'Aqua vitae (water of life)', 'ola wai'],
-    ['\u{1F714}', 'Salt', 'pa akai'],
-    ['\u{1F718}', 'Rock salt', 'pa akai pohaku'],
+    ['\u{1F708}', 'Aqua vitae (water of life)', 'ola&nbsp;&nbsp;wai'],
+    ['\u{1F714}', 'Salt', 'pa&nbsp;&nbsp;akai'],
+    ['\u{1F718}', 'Rock salt', 'pa&nbsp;&nbsp;akai&nbsp;&nbsp;pohaku'],
     ['\u{1F704}', 'Water', 'wai'],
-    ['\u{1F705}', 'Aquafortis (strong water)', 'wai ikaika'],      
+    ['\u{1F705}', 'Aquafortis (strong water)', 'wai&nbsp;&nbsp;ikaika'],      
   ]
  
   const notes = [{
@@ -57,7 +57,7 @@ export const Note = ({id}) => {
           <b>Mission brief (2/2)</b><br/>
           Dr. Berry insisted for this mission to go alone. 
           He was supposed to send regular updates, but none was ever received.
-          Team BLUE is now in charge of finding and bringing him back. 
+          Team BLUE is now in charge of finding him and bringing him back. 
           The team consists of Zendaya (BLUE1), Alexandar (BLUE2), Sarah (BLUE3), Rafael (BLUE4) and you (BLUE5) of course.
           You\'ll be going alone.
           <br/>
@@ -113,7 +113,7 @@ export const Note = ({id}) => {
       `<div style="text-align: left">
         <b>K81-4288-62</b><br/>     
         Last night the heat reader was fiddled with for the third time this week.</br>
-        I don't want to set it to the rights settings again each morning, so I've put a simple lock on it.</br>
+        I don't want to set it to the right settings again each morning, so I've put a simple lock on it.</br>
         That should do the trick.</br>
         </br>
         <table class="double iosevka" style="text-align: center">
@@ -156,7 +156,7 @@ export const Note = ({id}) => {
         <b>K81-4289-12</b><br/>
         Kayana showed me her garden today.
         It was really lovely, both the garden itself and seeing her so full of passion for it.
-        Apart from the colorful flowers, plant and trees, she also showed me the statues.
+        Apart from the colorful flowers, plants and trees, she also showed me the statues.
         She confirmed what I already suspected: they represent their gods: </br></br>
         - Awina, goddess of sea. She is in all the water, from a small raindrop to the big ocean. She is believed to be the mother of all life.</br>
         - Alano, god of the earth. He is in everything we walk on. He is believed to be the protector of all life.</br>
@@ -236,12 +236,12 @@ export const Note = ({id}) => {
         <div style="text-align: left">
           <b>K81-4293-5</b><br/>
           Of course I couldn't miss the two great canvasses in Akamai's lab.
-          I quickly learned that he considered it his life's work.
+          I quickly learned that he considered them his life's work.
           His mission - as he told me - was to discover every element within nature.
           In the last two years, he had extended his list to fourteen different elements.
           For each element he created a symbol and a name.
           Neat!
-          I suspected that the elements he discovered were already known to science, but I didn't date to spoil the fun.
+          I suspected that the elements he discovered were already known to science, but I didn't dare to spoil the fun.
           I spend a full day is his lab, asking him al kinds of questions.
           He was eager to answer and happily let me use his devices.
         </div>

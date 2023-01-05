@@ -119,7 +119,7 @@ export const NumbersToy = () => {
                   <td className='button ayana triple' style={{display: 'table-cell'}} id='number' rowSpan={track.length} onClick={() => changeNumberOne()}>{numberOne}</td>
                   <td className='button ayana triple' style={{display: 'table-cell'}} id='number' rowSpan={track.length} onClick={() => changeNumberTwo()}>{numberTwo}</td>
                   <td rowSpan={track.length}>&nbsp;</td>
-                  <td className='button triple' rowSpan={track.length} onClick={() => {handleClick()}}>{'\u{2BC8}'}</td>
+                  <td className='button triple' rowSpan={track.length} onClick={() => {handleClick()}}>{'\u{25B6}'}</td>
                 </>
               )}
 

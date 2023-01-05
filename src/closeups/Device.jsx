@@ -7,11 +7,13 @@ const Bar = ({position, setPosition}) => {
 
   return (
     <div className='double'>
-      <div className='button' style={{display: 'inline'}} onClick={() => {if(position > 0) {setPosition(position-1)}}}>{'\u{2BC7}'}</div>
+      <div className='button' style={{display: 'inline'}} onClick={() => {if(position > 0) {setPosition(position-1)}}}>{'\u{25C0}'}</div>
+      &nbsp;
       {plusses.map((item, index) => {
         return index == position ? '\u{2588}' : '+'
       })}
-      <div className='button' style={{display: 'inline'}} onClick={() => {if(position < length-1) setPosition(position+1)}}>{'\u{2BC8}'}</div>
+      &nbsp;
+      <div className='button' style={{display: 'inline'}} onClick={() => {if(position < length-1) setPosition(position+1)}}>{'\u{25B6}'}</div>
     </div>
   )
 }

@@ -6,11 +6,13 @@ const Bar = ({symbol, length, position, setPosition}) => {
 
   return (
     <div className='double'>
-      <div className='button' style={{display: 'inline'}} onClick={() => {if(position[symbol] > 0) {let newPosition = position.slice(); newPosition[symbol]--; setPosition(newPosition)}}}>{'\u{2BC7}'}</div>
+      <div className='button' style={{display: 'inline'}} onClick={() => {if(position[symbol] > 0) {let newPosition = position.slice(); newPosition[symbol]--; setPosition(newPosition)}}}>{'\u{25C0}'}</div>
+      &nbsp;
       {plusses.map((item, index) => {
         return index == position[symbol] ? '\u{2588}' : '+'
       })}
-      <div className='button' style={{display: 'inline'}} onClick={() => {if(position[symbol] < length-1) {let newPosition = position.slice(); newPosition[symbol]++; setPosition(newPosition)}}}>{'\u{2BC8}'}</div>
+      &nbsp;
+      <div className='button' style={{display: 'inline'}} onClick={() => {if(position[symbol] < length-1) {let newPosition = position.slice(); newPosition[symbol]++; setPosition(newPosition)}}}>{'\u{25B6}'}</div>
     </div>
   )
 }
