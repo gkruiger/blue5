@@ -20,3 +20,7 @@ More about my how the development of this game on my personal website: https://w
 - react-dom
 - uuid
 
+## Fonts used
+- DejaVuSansMono
+- EversonMono
+- Iosevka
