@@ -13,14 +13,14 @@ More about my how the development of this game on my personal website: https://w
 - Michael T for the favicon (https://thenounproject.com/icon/darkness-element-1198067/)
 
 ## Dependencies
+### NPM packages
 - classnames
 - fontkit
 - react
 - react-device-detect
 - react-dom
 - uuid
-
-## Fonts used
+### Fonts
 - DejaVuSansMono
 - EversonMono
 - Iosevka
