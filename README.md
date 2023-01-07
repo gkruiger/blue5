@@ -1,5 +1,5 @@
 # Blue5 | A monospace adventure
-Learning myself React while creating a simple, but hopefully challenging and enjoyable game.
+Learning myself React while creating a simple, but hopefully challenging and enjoyable game.<br>
 For the React Native variant of this game: https://github.com/gkruiger/blue5app
 
 ## How to play
