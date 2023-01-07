@@ -9,9 +9,6 @@ Learning myself React while creating a simple, but hopefully challenging and enj
 ## Background information
 More about my how the development of this game on my personal website: https://www.ontdeksels.nl/blue5-an-adventure-in-monospace/.
 
-## Thanks to
-- Michael T for the favicon (https://thenounproject.com/icon/darkness-element-1198067/)
-
 ## Dependencies
 ### NPM packages
 - classnames
@@ -24,3 +21,5 @@ More about my how the development of this game on my personal website: https://w
 - DejaVuSansMono
 - EversonMono
 - Iosevka
+### Other
+- Favicon by Michael T (https://thenounproject.com/icon/darkness-element-1198067/)
