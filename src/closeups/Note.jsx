@@ -242,13 +242,13 @@ export const Note = ({id}) => {
           For each element he created a symbol and a name.
           Neat!
           I suspected that the elements he discovered were already known to science, but I didn't dare to spoil the fun.
-          I spend a full day is his lab, asking him al kinds of questions.
+          I spent a full day is his lab, asking him al kinds of questions.
           He was eager to answer and happily let me use his devices.
         </div>
       `, `
         <div style="text-align: left">
           <b>K81-4293-5 (continued)</b><br/>
-          End the end of the day I was able to translate the Ayana names for the elements Akamai discovered to the ones I'm familiar with.
+          At the end of the day I was able to translate the Ayana names for the elements Akamai discovered to the ones I'm familiar with.
           <br/><br/> 
           <table class="left single">
             <tbody>
@@ -317,7 +317,7 @@ export const Note = ({id}) => {
         So when they decided to </br>
         go with them.<br/>
         <br/>
-        I'm sure this doesn't even begin to.<br/>
+        I'm sure this doesn't even begin to<br/>
         you must have<br/>
         I therefore invite you to<br/>
         us, to our<br/>
@@ -337,7 +337,7 @@ export const Note = ({id}) => {
           <b>K81-4294-82</b><br/>
           Akamai believed that the elements he had found could be combined.
           He was convinced that certain combinations would unlock new possibilities. 
-          He said already found one: fire and oil, and he hoped 
+          He said he already found one: fire and oil, and he hoped 
           Ailua was honored by this discovery, as it provided his people with continuous warmth and light.
           He had high hopes for combining Awina's element with its three variants.
         </div>`
