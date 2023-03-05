@@ -1,9 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
 
+import Hints from './Hints'
+
 import AnimateHeight from './react-animate-height'
 
-export default function Menu({isSoundOn, setIsSoundOn, restart}) {
+export default function Menu({isSoundOn, setIsSoundOn, restart, interactions, puzzlesSolved}) {
 
   const nbsps = (spaces) => {
     return '\u{00A0}'.repeat(spaces)
@@ -12,6 +14,7 @@ export default function Menu({isSoundOn, setIsSoundOn, restart}) {
   const [soundHeight, setSoundHeight] = useState(0)
   const [restartHeight, setRestartHeight] = useState(0)
   const [aboutHeight, setAboutHeight] = useState(0)
+  const [hintsHeight, setHintsHeight] = useState('auto')
   
   return (
     <div className='menuContainer'>
@@ -24,6 +27,16 @@ export default function Menu({isSoundOn, setIsSoundOn, restart}) {
             </div>
           </div>
           <div>
+            <div className={hintsHeight === 0 ? 'menuItem' : 'menuItem active'} onClick={() => {
+              if(hintsHeight === 0) {
+                setSoundHeight(0)
+                setRestartHeight(0)
+                setAboutHeight(0)
+                setHintsHeight('auto')
+              } else {
+                setHintsHeight(0)
+              }}}>Hints
+            </div>
             <div className={soundHeight === 0 ? 'menuItem' : 'menuItem active'} onClick={() => {
               if(!isSoundOn) {
                 setIsSoundOn(true)
@@ -32,6 +45,7 @@ export default function Menu({isSoundOn, setIsSoundOn, restart}) {
                   setSoundHeight('auto')
                   setRestartHeight(0)
                   setAboutHeight(0)
+                  setHintsHeight(0)
                 } else {
                   setSoundHeight(0)
               }}}}>
@@ -42,6 +56,7 @@ export default function Menu({isSoundOn, setIsSoundOn, restart}) {
                 setSoundHeight(0)
                 setRestartHeight('auto')
                 setAboutHeight(0)
+                setHintsHeight(0)
               } else {
                 setRestartHeight(0)
               }}}>
@@ -52,19 +67,34 @@ export default function Menu({isSoundOn, setIsSoundOn, restart}) {
                 setSoundHeight(0)
                 setRestartHeight(0)
                 setAboutHeight('auto')
+                setHintsHeight(0)
               } else {
                 setAboutHeight(0)
               }}}>About
             </div>
           </div>
         </div>
-          
+
+        <AnimateHeight
+          duration={500}
+          animateOpacity={true}
+          height={hintsHeight}
+        >
+          <Hints
+            interactions={interactions}
+            puzzlesSolved={puzzlesSolved}
+            hintsHeight={hintsHeight}
+            setHintsHeight={setHintsHeight}
+          />
+        </AnimateHeight>
+
         <AnimateHeight
           duration={500}
           animateOpacity={true}
           height={soundHeight}
         >
           <div className='menuItemContent'>
+            <br/>
             +--------------------------------------------------------+
             | Every time someone turns the sound of, its creator{nbsps(5)}|
             | sheds a tear.{nbsps(42)}|
@@ -83,6 +113,7 @@ export default function Menu({isSoundOn, setIsSoundOn, restart}) {
           height={restartHeight}
         >
           <div className='menuItemContent'>
+            <br/>
             +--------------------------------------------------------+
             | You will loose all your progress and start the game{nbsps(4)}|
             | from the beginning.{nbsps(36)}|
@@ -101,9 +132,10 @@ export default function Menu({isSoundOn, setIsSoundOn, restart}) {
           height={aboutHeight}
         >
           <div className='menuItemContent'>
+            <br/>
             +--------------------------------------------------------+
             | Made by Gertjan Kruiger. {nbsps(30)}|
-            | Music by Jesse Kruiger. {nbsps(31)}|
+            | Music by <a href="https://www.youtube.com/@XXrunnerXX">Jesse Kruiger</a>. {nbsps(31)}|
             | More about this game on my <a href="https://www.ontdeksels.nl/blue5-an-adventure-in-monospace/">personal website</a>. {nbsps(10)}|
             | Android app available in the <a href="">Google Play Store</a>. {nbsps(7)}|
             | Code available in Github (<a href="https://github.com/gkruiger/blue5">Web</a> | <a href="https://github.com/gkruiger/blue5app">App</a>). {nbsps(17)}|

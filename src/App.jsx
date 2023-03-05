@@ -23,10 +23,11 @@ export default function App() {
   const [storyLines, setStoryLines] = useState(state?.storyLines)
   const [location, setLocation] = useState(state?.location)
   const [history, setHistory] = useState(state?.history ?? [])
+  const [puzzlesSolved, setPuzzlesSolved] = useState(state?.puzzlesSolved ?? [])
   const [closeUp, setCloseUp] = useState(state?.closeUp)
   const [fadeOut, setFadeOut] = useState(false)
   const [mobileCheckDone, setMobileCheckDone] = useState(false)
- 
+  
   const saveStateToLocalStorage = () => {
     localStorage.setItem(
       'state', 
@@ -37,6 +38,7 @@ export default function App() {
         location: location,
         history: history,
         closeUp: closeUp,
+        puzzlesSolved: puzzlesSolved
       })
     )
   }
@@ -140,6 +142,7 @@ export default function App() {
     for(let action of interactions) {
       if(action?.closeUp?.id == closeUp.id) {
         setCloseUp(undefined)
+        setPuzzlesSolved(puzzlesSolved => [...puzzlesSolved, action.id])
         setHistory(history => [...history, action.id])
         setStoryLines(storyLines => [...storyLines, {text: closeUp.texts.join(' ') + '<br/><br/>', id: uuidv4()}])
       }
@@ -169,6 +172,8 @@ export default function App() {
             isSoundOn={isSoundOn} 
             setIsSoundOn={setIsSoundOn}
             restart={restart}
+            interactions={interactions}
+            puzzlesSolved={puzzlesSolved}
           />
           <CloseUp
             closeUp={closeUp}

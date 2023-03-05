@@ -13,7 +13,8 @@ const interactions = [{
         '<i>Sending initial report to K81\'s ERCOC Central Hub.</i>',
     ],
     location: 'start'
-}, {    id: 1,
+}, {    
+    id: 1,
     name: 'Wake up',
     requirements: {
         location: 'start',
@@ -38,7 +39,7 @@ const interactions = [{
         'Right before my eyes I see an electronic panel.',
         'To my left and to my right, there are some kind of keypads.'
     ]
-} , {
+}, {
     id: 3,
     name: 'Push top',
     requirements: {
@@ -73,6 +74,19 @@ const interactions = [{
         id: 'LeftKeypad',
         texts: [
             'I hear a soft click and the left keypad closes.',
+        ], 
+        hints: [
+            `Have you tried the panel?`,
+            `Have you read the last entry?`,
+            `You need your personal ID. Any idea what that could be?`,
+            `Have you read the second-last entry?`,
+            `Your personal ID is BLUE5.`,
+            `How could you enter BLUE5 into both keypads?`,
+            `Have you given both keypads a try?`,
+            `Anything that caught your attention?`,
+            `Both keypads accept four characters.`,
+            `BLUE5 doesn't fit in four characters.`,
+            `'BLUE' however, does. Try this in the left keypad.`,
         ]
     }
 }, {
@@ -87,7 +101,15 @@ const interactions = [{
         id: 'RightKeypad',
         texts: [
             'I hear a soft click and the right keypad closes.',
-        ]
+        ],
+        hints: [
+            `Your personal ID is BLUE5.`,
+            `You already entered 'BLUE' in the left keypad.`,
+            `That leaves you with '5'`,
+            `The keypad only has letters, no numbers.`,
+            `How could you enter 5 in letters?`,
+            `Enter 'FIVE' in the right keypad.`,
+        ]        
     }
 }, {
     id: 7,
@@ -181,7 +203,32 @@ const interactions = [{
         id: 'CaveDoor',
         texts: [
             'I hear a soft click and the door opens.',
-        ]
+        ],
+        hints: [
+            `Have you examined the door?`,
+            `Have you tried changing the four blocks?`,
+            `You need to find the right combination.`,
+            `Have you seen these blocks elsewhere?`,
+            `Examine the drawings on the left.`,
+            `Two different stick figures and two different blocks. Somehow they relate to each other.`,
+            `Have you seen stick figures elsewhere?`,
+            `Examine the drawings on the right.`,
+            `Four different stick figures. Four different blocks you need the right setting for. That can't be a coincidence.`,
+            `What if you could translate these stick figures to blocks?`,
+            `Actually, two stick figures have been translated already.`,
+            `Examine the drawings on the left.`,
+            `How to translate the other two stick figures from the drawings on the right?`,
+            `What is the difference between the stick figures from the drawings on the left?`,
+            `Have you read the note?`,
+            `The only difference is their arms.`,
+            `The third stick figure has the same block as the first, flipped horizontally. The fourth stick figure has the same block as the first.`,
+            `Having all stick figures translated to the right blocks, it's only a matter of finding the right order.`,
+            `The drawings to the right help you out here.`,
+            `Each different stick figure is drawn a different number of times.`,
+            `The top one is drawn once, so its corresponding block is the first.`,
+            `Actually, it's just from top to bottom.`,
+            `The code to the door is: <div class="double iosevka">\u{25EA}\u{2B13}\u{2B15}\u{2B13}</div>`,
+        ]     
     }
 }, {
     id: 16,
@@ -264,6 +311,15 @@ const interactions = [{
         id: 'BoxLock',
         texts: [
             'I hear a soft click and the box opens.'
+        ],
+        hints: [
+            `Have you examined the box at the top of the vulcano?`,
+            `You'll need to point the arrows in the right direction.`,
+            `Have you seen these arrows before?`,
+            `Read the note at the foot of the vulcano.`,
+            `Most of the time, red means wrong, green means good.`,
+            `Try changing the arrows to the positions given by the green arrows in the note.`,
+            `Try changing the corners first and then the middle ones.`,
         ]
     }
 }, {
@@ -296,6 +352,21 @@ const interactions = [{
         id: 'HeatDistributor',
         texts: [
             'Slowly and with squeaking and clunking noises, the bridge comes down.'
+        ],
+        hints: [
+            `Have you noticed the similarities between the two boxes?`,
+            `Both have bars which can be set to different heights.`,
+            `Both have U shaped characters at different rotations.`,
+            `Have you tried changing the bar of the box at the top of the vulcano?`,
+            `Anything interesting happening?`,
+            `The bar turns green at a certain position.`,
+            `Try this for the various rotations of the U shaped character.`,
+            `What does this tell you?`,
+            `For every rotation, there is a specific right height.`,
+            `Apply this to the box at the foot of the vulcano.`,
+            `From left to right, the right heights are 4, 2, 7 and 5.`,
+            `Nothing happening? There is something there that didn't seem to do anything before.`,
+            `Turn the lever to the right.`,
         ]
     }
 }, {
@@ -375,6 +446,49 @@ const interactions = [{
         id: 'GardenGate',
         texts: [
             'I hear a soft click and the gate opens.',
+        ],
+        hints: [
+            `Have you examined the gate?`,
+            `Have you examined the note?`,
+            `Read carefully what Kayana is saying.`,
+            `'Only those who know all the sixteen steps of the path of the gods, can get in.'`,
+            `Any idea what those 'sixteen steps' refer to?`,
+            `The 'sixteen steps' correspond to the sixteen lines on the gate.`,
+            `Did you also notice what Kayana was doing?`,
+            `She drew symbols in the sand.`,
+            `Have you seen those symbols before?`,
+            `Check the gate.`,
+            `The black triangle is the second triangle on the left, the white triangle is the fourth on the right.`,
+            `What connects both triangles?`,
+            `Nothing yet. How about connecting them?`,
+            `You need to find the right path from the second triangle on the left, to the fourth triangle on the right.`,
+            `You need to find the sixteen steps of the path of the gods.`,
+            `Did you check all the corners of the garden?`,
+            `And did you examine the four statues?`,
+            `And did you examine the four plaques?`,
+            `If you did, you now would have 4 times 4 lines, which is 16 lines in total.`,
+            `You have found the 16 steps of the path of the gods.`,
+            `And did you examine the four statues?`,
+            `And did you examine the four plaques?`,
+            `If you did, you now would have 4 times 4 lines, which is 16 lines in total.`,
+            `You have found the 16 steps of the path of the gods.`,
+            `Any idea what the order of these steps would be?`,
+            `Check the note again, especially the second entry.`,
+            `If that didn't help you out, just follow the numbered corners.`,
+            `However using this order to set the lines from left to right, from top to bottom, doesn't work.`,
+            `Can you think of another way of setting the lines one by one?`,
+            `You know where the path starts.`,
+            `You also know the first step.`,
+            `Set the the second row, first column to a \u{251B}.`,
+            `You also know the second step, which is a \u{250F}.`,
+            `You'll want to continue the path.`,
+            `Set the the first row, first column to a \u{250F}.`,
+            `Extend the path, step by step, until you arrive at the fourth triangle on the right.`,
+            `The final path should look like this:<br/>
+            \u{250F}\u{2501}\u{2501}\u{2513}<br/>
+            \u{251B}\u{250F}\u{2513}\u{2503}<br/>
+            \u{250F}\u{251B}\u{2517}\u{251B}<br/>
+            \u{2517}\u{2501}\u{2501}\u{2501}`,
         ]
     },
 }, {
@@ -638,6 +752,28 @@ const interactions = [{
         id: 'SchoolDoor',
         texts: [
             'I hear a soft click and the door opens.',
+        ],
+        hints: [
+            `Have you examined the door?`,
+            `Have you examined the note?`,
+            `The code to the door is right there.`,
+            `It's four pairs of symbols.`,
+            `Somehow, these four pairs tell you which lines to select for the door to open.`,
+            `Have you seen those symbols elsewhere?`,
+            `Have you examined the first toy?`,
+            `Try fiddling around with it.`,
+            `Repeatedly hit the black triangle.`,
+            `What do you observe?`,
+            `The colors rotate.`,
+            `What else can you see?`,
+            `The path is random.`,
+            `What else can you see?`,
+            `The number of lines are the same.`,
+            `Try changing the two triangles on the left.`,
+            `Each combination of triangles correspond to a certain number of lines.`,
+            `You now have a way of converting the four pairs of symbols to four numbers.`,
+            `The numbers are 3, 9, 11 and 14.`,
+            `Select the third, nineth, eleventh and fourteenth line and the door opens.`,
         ]
     }
 }, {
@@ -751,6 +887,60 @@ const interactions = [{
         texts: [
             'I hear a soft click and the box opens.',
             'There is an envelope inside.'
+        ],
+        hints: [
+            `There's lots to see and lots to fiddle with in both lab rooms.`,
+            `Focus on the left lab room first.`,
+            `That box does look interesting, doesn't it?`,
+            `There are two types of symbols on the box: four triangles and four series of five other symbols.`,
+            `Have you seen those triangle anywhere else?`,
+            `You don't have to look far.`,
+            `Examine the canvasses.`,
+            `On the canvasses, each symbol is followed by a series of other symbols.`,
+            `Have you seen those other symbols before?`,
+            `Check the box again.`,
+            `Too bad the series of symbols next to the triangles on the canvasses aren't exactly five characters long.`,
+            `Any idea what those symbols are?`,
+            `Check the school, especially the left blackboard.`,
+            `Can you think of a series of symbols you learn at school?`,
+            `It's the Ayana alphabeth.`,
+            `Each triangle corresponds with a five letter word in Ayana.`,
+            `Back to the canvasses: any idea what these canvasses represent?`,
+            `Take a look at the note.`,
+            `The canvasses form a list of all the elements discovered by Akamai, identified by a symbol and its name in Ayana.`,
+            `It would be nice if you could translate those Ayana names to English.`,
+            `No worries, somebody else already did.`,
+            `Check the note again, especially from second entry forward.`,
+            `By now, you have figured out that from top to bottom, the elements corresponding to the triangles  are 'air', 'fire', 'earth' and 'water'.`,
+            `Have you seen those four elements anywhere else?`,
+            `You'll need to retrace your steps.`,
+            `Revisit the garden.`,
+            `Take a look at the four statues.`,
+            `Pay attention to whatever their feet are standing in.`,
+            `By now, you have figured out that the first statue relates to water, the second to earth, the third to air and the fourth to fire.`,
+            `Did you check the plaques for each statue?`,
+            `By now, you have figured out three of the four five letter Ayana words.`,
+            `The plaque for the second statue doesn't give you a five letter word however.`,
+            `Any idea what these statues represent?`,
+            `The statues represent the Ayana gods.`,
+            `You might have read about these gods before.`,
+            `Check the note in the garden.`,
+            `It's the god of the earth, Alano, who's name in you're looking for.`,
+            `However, you need his name in Ayana.`,
+            `This time, you have to make the translation yourself.`,
+            `It's more straightforward than you migh think.`,
+            `Check the names of the other three gods.`,
+            `It helps to write the three names of the gods in pairs: in Ayana on one side, in English on the other side.`,
+            `Notice that on both sides, the names consist of five letters.`,
+            `You now should be able to match the Ayana and English letters.`,
+            `Alano consists of 4 different letters, for both A's, check the first letter of any god. For the L, check the third letter of Ailua. For the N, check the fourth letter of Awina or the second letter of Anomi. For the O, check the third letter of Anomi.`,
+            `Set the box in the left lab to the following symbols:</br></br>
+            <div class='ayana'>
+            anomi</br>
+            ailua</br>
+            alano</br>
+            awina
+            </div>`
         ]
     }
 }, {
@@ -777,6 +967,62 @@ const interactions = [{
         texts: [
             'I hear a soft click and the box opens.',
             'There is an envelope inside.'
+        ],
+        hints: [
+            `That box does look interesting, doesn't it?`,
+            `It looks like it opens by entering a certain color combination.`,
+            `It seems that a solution is far away.`,
+            `Seen any hint as to where you might start?`,
+            `Read the note carefully.`,
+            `The last sentence is your starting point.`,
+            `Awina's element should take you back to the left lab.`,
+            `You've already figured Awina's element out in the previous puzzle.`,
+            `Awina's element is 'water'.`,
+            `Where to find water and three variants of water?`,
+            `This almost sounds like chemistry.`,
+            `This should take you back to Akamai's work in the left lab.`,
+            `Go back to the left lab room and check the note, especially the third and fourth entry.`,
+            `Now you have identified the four types of water (royal water, water of life, water & strong water) and their names in Ayana: <ayana>ali i wai, ola wai, wai & wai ikaika</ayana>.`,
+            `Four Ayana names for water. Where have you seen those before?`,
+            `You don't have to look far.`,
+            `Check the canvasses.`,
+            `If you match the four Ayana names, you have found their corresponding symbols: <div class="eversonmono">\u{1F706}, \u{1F708}, \u{1F704}</div> and <div class="eversonmono">\u{1F705}</div>.`,
+            `Best to take a closer look at these symbols.`,
+            `How about using a microscope?`,
+            `Check the microscope in the right lab.`,
+            `It seems that the settings for the microscope are not right.`,
+            `For each of the four symbols, find the right settings.`,
+            `The right settings (in terms of position from left to right) are: </br>
+            for <div class="eversonmono">\u{1F706}</div>: 4, 1, 8 and 2,</br>
+            for <div class="eversonmono">\u{1F708}</div>: 1, 3, 4 and 8,</br>
+            for <div class="eversonmono">\u{1F704}</div>: 7, 5, 8 and 1.</br>
+            for <div class="eversonmono">\u{1F705}</div>: 8, 1, 6 and 5.</br>`,
+            `Have you seen these 'settings' elsewhere?`,
+            `You don't have to look far.`,
+            `Check the device in the right lab.`,
+            `Why not enter all the settings in the device?`,
+            `Entering all settings results in the following:</br>
+            4, 1, 8 and 2 translates to <div style="color: red; display: inline">\u{25E5}</div> - - <div style="color: blue; display: inline">\u{25E5}</div></br>
+            1, 3, 4 and 8 translates to - <div style="color: yellow; display: inline">\u{25E5}</div> <div style="color: red; display: inline">\u{25E5}</div> - </br>
+            7, 5, 8 and 1 translates to <div style="color: red; display: inline">\u{25E3}</div> <div style="color: blue; display: inline">\u{25E3}</div> - - </br>
+            8, 1, 6 and 5 translates to - - <div style="color: yellow; display: inline">\u{25E3}</div> <div style="color: blue; display: inline">\u{25E3}</div>`,
+            `It helps to visit the school again.`,
+            `What did you learn from the second toy?`,
+            `The second toy teaches you that shapes can be combined to make new shapes.`,
+            `Not every shape of the toy is relevant.`,
+            `The relevant shapes are the ones you've found: <eversonmono>\u{25E5}, \u{25E3}</eversonmono>.`,
+            `Together, these shapes form a \u{25FC}.`,
+            `And this \u{25FC} is exactly the same as the 'buttons' on the box in the right lab.`,
+            `You need to combine the eight colored triangles to four rectangles.`,
+            `It helps to write the colored triangles found one below the other.`,
+            `By now you have combined a red triangle with another red one, a yellow with a blue one, a red with a yellow one and a blue with a blue one.`,
+            `This gives you a red rectangle, two dual colored rectangles and a blue rectangle.`,
+            `You need one color for each rectangle.`,
+            `If helps to visit the school again.`,
+            `Examine the right blackboard`,
+            `The right blackboard teaches you that colors can be combined to make new colors.`,
+            `Yellow with blue makes green, red with yellow makes orange.`,
+            `The combination to the box is: red, green, orange, blue`,
         ]
     }
 }, {
@@ -835,6 +1081,17 @@ const interactions = [{
         id: 'LeftKeypad2',
         texts: [
             'I hear a soft click and the left keypad closes.',
+        ],
+        hints: [
+            `Did you check the boxes in both labs?`,
+            `Did you check both envelopes?`,
+            `It helps to write the content of both envelopes next to each other.`,
+            `The contents of both envelopes form one letter.`,
+            `You have an invitation of dr. Berry to follow him.`,
+            `His ID is the key.`,
+            `You have been using an ID before.`,
+            `Go back to the start, to you SPPL.`,
+            `Enter GREY in the left keypad.`,
         ]
     }
 }, {
@@ -849,6 +1106,17 @@ const interactions = [{
         id: 'RightKeypad2',
         texts: [
             'I hear a soft click and the right keypad closes.',
+        ],
+        hints: [
+            `Did you check both boxes?`,
+            `Did you check both envelopes?`,
+            `It helps to write the contents of both envelopes down.`,
+            `You need to combine the two envelopes so they form one letter.`,
+            `You have an invitation of dr. Berry to follow him.`,
+            `His ID is the key.`,
+            `You have been using an ID before.`,
+            `Go back to the start, to you SPPL.`,
+            `Enter FOUR in the right keypad.`,
         ]
     }
 }, {

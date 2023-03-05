@@ -8,7 +8,7 @@ export const Note = ({id}) => {
     ['\u{1F706}', 'Aqua regia (royal water)', 'ali&nbsp;&nbsp;i&nbsp;&nbsp;wai'],
     ['\u{1F701}', 'Air', 'ea'],
     ['\u{1F721}', 'Iron ore', 'hao&nbsp;&nbsp;hao'],
-    ['\u{1F703}', 'Earth', 'honua'],
+    ['\u{1F703}', 'Earth', 'lepo'],
     ['\u{1F72A}', 'Lead ore', 'ke&nbsp;&nbsp;kepau&nbsp;&nbsp;oka'],
     ['\u{1F720}', 'Copper ore', 'keleawe&nbsp;&nbsp;keleawe'],
     ['\u{1F732}', 'Regulus', 'liona'],
@@ -93,7 +93,7 @@ export const Note = ({id}) => {
     id: 'cavedrawingsleft',
     pages: [
       `<div class="double iosevka">
-        \u{1FBC7} - \u{2B15}<br/>
+        \u{1FBC7} - \u{25EA}<br/>
         \u{1FBC5} - \u{2B13}<br/>
       </div>`
     ]
@@ -168,7 +168,7 @@ export const Note = ({id}) => {
         Today I tried opening the garden gate.
         I saw people coming in and out of the garden, but when I tried to open the gate, it was closed.
         I asked Kayana about it.
-        She said that only those who know all the sixteen steps of the gods, can get in.
+        She said that only those who know all the sixteen steps of the path of the gods, can get in.
         When I looked confused, she drew a few symbols in the sand:<br/><br/>
         \u{25B6} \u{2501} ? \u{2501} \u{25C1}<br/><br/>
         After that, she gave me that special look of hers, smiled and walked away. 
