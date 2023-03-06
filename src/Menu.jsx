@@ -137,7 +137,7 @@ export default function Menu({isSoundOn, setIsSoundOn, restart, interactions, pu
             | Made by Gertjan Kruiger. {nbsps(30)}|
             | Music by <a href="https://www.youtube.com/@XXrunnerXX">Jesse Kruiger</a>. {nbsps(31)}|
             | More about this game on my <a href="https://www.ontdeksels.nl/blue5-an-adventure-in-monospace/">personal website</a>. {nbsps(10)}|
-            | Android app available in the <a href="">Google Play Store</a>. {nbsps(7)}|
+            | Android app available in the <a href="https://play.google.com/store/apps/details?id=com.gkruiger.blue5app">Google Play Store</a>. {nbsps(7)}|
             | Code available in Github (<a href="https://github.com/gkruiger/blue5">Web</a> | <a href="https://github.com/gkruiger/blue5app">App</a>). {nbsps(17)}|
             |{nbsps(56)}|
             | <div className='button' onClick={() => {setAboutHeight(0)}}>[Ok, good to know.]</div>{nbsps(36)}|
