@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 
 import Hints from './Hints'
@@ -14,7 +14,7 @@ export default function Menu({isSoundOn, setIsSoundOn, restart, interactions, pu
   const [soundHeight, setSoundHeight] = useState(0)
   const [restartHeight, setRestartHeight] = useState(0)
   const [aboutHeight, setAboutHeight] = useState(0)
-  const [hintsHeight, setHintsHeight] = useState('auto')
+  const [hintsHeight, setHintsHeight] = useState(0)
   
   return (
     <div className='menuContainer'>

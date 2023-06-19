@@ -37,7 +37,7 @@ export default function MobileWarning({setMobileCheckDone}) {
         paddingRight: 100,
         paddingTop: 50,     
       }}>
-        <a href="https://www.nu.nl" style={{
+        <a href="https://play.google.com/store/apps/details?id=com.gkruiger.blue5app" style={{
           textDecoration: 'none',
           color: 'black'
         }}>
